@@ -1,24 +1,93 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // 页面淡入效果
-    document.body.style.opacity = 0;
-    document.body.style.transition = 'opacity 0.6s ease';
-    setTimeout(() => {
-        document.body.style.opacity = 1;
-    }, 80);
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>长青青耘社会实践支教团</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="header-bg">
+        <div class="school-badge-float">
+            <img src="images/logo.png" alt="长青青耘" />
+        </div>
+        <h1>长青青耘社会实践支教团</h1>
+        <p class="slogan" id="typewriter">青春逐梦 · 为爱耕耘</p>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="team.html">团队介绍</a></li>
+                <li><a href="location.html">支教地点</a></li>
+                <li><a href="activities.html">活动日记</a></li>
+                <li><a href="members.html">成员风采</a></li>
+                <li><a href="contact.html">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    // 打字机口号
-    const slogan = document.getElementById('typewriter');
-    if (slogan) {
-        const text = slogan.innerText.trim();
-        slogan.innerText = '';
-        let i = 0;
-        const interval = setInterval(() => {
-            if (i < text.length) {
-                slogan.innerText += text.charAt(i);
-                i++;
-            } else {
-                clearInterval(interval);
-            }
-        }, 80);
-    }
-});
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>长青青耘 · 为爱启航</h2>
+                <p>这个夏天，我们以爱为舟，奔赴湖南隆回</p>
+                <a href="team.html" class="btn-primary">了解我们</a>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>关于我们</h2>
+            <p>
+                “长青青耘”社会实践支教团隶属于北京科技大学，致力于在湖南省隆回县九龙学校开展支教活动。
+                我们用青春和热情点亮乡村孩子的梦想，用知识和陪伴助力他们成长。
+            </p>
+            <div class="features">
+                <div class="feature-item">
+                    <h3>📚 多元课程</h3>
+                    <p>涵盖语文、数学、英语、科学、艺术、体育等，全面发展。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>❤️ 用心陪伴</h3>
+                    <p>注重素质教育与心理健康辅导，用爱浇灌每一颗心灵。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🌟 青春力量</h3>
+                    <p>团队成员来自不同专业，怀揣教育理想，充满活力与热情。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-media-qr">
+            <h2>社交媒体账号</h2>
+            <div class="social-qr-list">
+                <div class="social-qr-item">
+                    <img src="images/wechat.jpg" alt="微信公众号" class="qr-img social-qr-img" />
+                    <div>微信公众号</div>
+                </div>
+                <div class="social-qr-item">
+                    <img src="images/xiaohongshu.jpg" alt="小红书" class="qr-img social-qr-img" />
+                    <div>小红书</div>
+                </div>
+                <div class="social-qr-item">
+                    <img src="images/kuaishou.jpg" alt="快手" class="qr-img social-qr-img" />
+                    <div>快手</div>
+                </div>
+                <div class="social-qr-item">
+                    <img src="images/douyin.jpg" alt="抖音" class="qr-img social-qr-img" />
+                    <div>抖音</div>
+                </div>
+                <div class="social-qr-item">
+                    <img src="images/weibo.jpg" alt="微博" class="qr-img social-qr-img" />
+                    <div>微博</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 长青青耘社会实践支教团 ｜ 北京科技大学</p>
+    </footer>
+
+    <!-- 引用外部 JS 文件，所有动态效果写在此文件中 -->
+    <script src="js/main.js"></script>
+</body>
+</html>
