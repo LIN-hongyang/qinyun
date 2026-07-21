@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>活动日记 - 长青青耘</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .diary-list {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .diary-item {
+            background: white;
+            padding: 22px 28px;
+            margin-bottom: 20px;
+            border-radius: 18px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border-left: 6px solid #00a0c4;
+            transition: 0.3s;
+        }
+        .diary-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,100,155,0.08);
+        }
+        .diary-item .date {
+            color: #02598a;
+            font-weight: bold;
+            margin-right: 16px;
+            font-size: 16px;
+        }
+        .diary-item .title {
+            font-size: 19px;
+            font-weight: 600;
+        }
+        .diary-item .summary {
+            color: #555;
+            margin-top: 10px;
+            line-height: 1.7;
+        }
+        .update-tip {
+            max-width: 900px;
+            margin: 10px auto 0;
+            padding: 14px 24px;
+            background: #fef9e7;
+            border-radius: 14px;
+            border-left: 5px solid #f39c12;
+            font-size: 15px;
+            color: #555;
+        }
+        .update-tip code {
+            background: #eee;
+            padding: 3px 8px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-bg">
+        <div class="school-badge-float">
+            <img src="images/logo.png" alt="长青青耘" />
+        </div>
+        <h1>长青青耘社会实践支教团</h1>
+        <p class="slogan">青春逐梦 · 为爱耕耘</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="team.html">团队介绍</a></li>
+                <li><a href="location.html">支教地点</a></li>
+                <li><a href="activities.html" class="active">活动日记</a></li>
+                <li><a href="members.html">成员风采</a></li>
+                <li><a href="contact.html">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>📖 支教日记</h2>
+            <p style="color:#888;font-size:16px;">记录在九龙学校的点点滴滴</p>
+        </section>
+
+        <div class="diary-list">
+            <div class="diary-item">
+                <span class="date">2026-07-20</span>
+                <span class="title">DAY1：初遇九龙，满眼星光</span>
+                <div class="summary">今天是我们到达隆回县九龙学校的第一天。孩子们好奇的眼神和纯真的笑容，瞬间融化了我们一路的疲惫。破冰游戏上，大家玩得不亦乐乎。</div>
+            </div>
+            <div class="diary-item">
+                <span class="date">2026-07-19</span>
+                <span class="title">出发！奔赴湖南隆回</span>
+                <div class="summary">拖着行李箱，带着满满的教学物资，我们从北京出发。火车穿过平原和山川，心里充满了对支教生活的期待。九龙学校，我们来啦！</div>
+            </div>
+        </div>
+
+        <div class="update-tip">
+            💡 <strong>如何更新日记：</strong> 打开本文件（activities.html），找到上面 <code>&lt;div class="diary-list"&gt;</code> 区域，复制一份 <code>&lt;div class="diary-item"&gt;...&lt;/div&gt;</code> 粘贴到最前面，修改日期、标题和内容，保存并刷新网页即可。
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 长青青耘社会实践支教团 ｜ 北京科技大学</p>
+    </footer>
+</body>
+</html>
