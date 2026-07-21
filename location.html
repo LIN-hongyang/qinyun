@@ -1,65 +1,77 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>活动日记 - 长青青耘</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支教地点 - 长青青耘</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        .diary-list {
-            max-width: 900px;
+        .location-content {
+            max-width: 1000px;
             margin: 20px auto;
-            padding: 0 20px;
+            padding: 0 25px;
         }
-        .diary-item {
-            background: white;
-            padding: 22px 28px;
-            margin-bottom: 20px;
-            border-radius: 18px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-            border-left: 6px solid #00a0c4;
-            transition: 0.3s;
+        .location-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
         }
-        .diary-item:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(0,100,155,0.08);
-        }
-        .diary-item .date {
+        .location-card h2 {
             color: #02598a;
-            font-weight: bold;
-            margin-right: 16px;
+            border-bottom: 3px solid #00a0c4;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .location-card p {
+            line-height: 1.8;
+            color: #444;
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+        .location-card ul {
+            padding-left: 25px;
+            margin: 15px 0;
+        }
+        .location-card li {
+            margin-bottom: 12px;
+            line-height: 1.7;
             font-size: 16px;
         }
-        .diary-item .title {
-            font-size: 19px;
-            font-weight: 600;
+        .school-img {
+            width: 100%;
+            max-height: 360px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
-        .diary-item .summary {
-            color: #555;
-            margin-top: 10px;
-            line-height: 1.7;
+        .highlight-box {
+            background: #e6f7ff;
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin: 30px 0;
+            border-left: 6px solid #02598a;
         }
-        .update-tip {
-            max-width: 900px;
-            margin: 10px auto 0;
-            padding: 14px 24px;
-            background: #fef9e7;
-            border-radius: 14px;
-            border-left: 5px solid #f39c12;
-            font-size: 15px;
-            color: #555;
+        .highlight-box strong {
+            color: #01334d;
         }
-        .update-tip code {
-            background: #eee;
-            padding: 3px 8px;
-            border-radius: 6px;
+        .map-placeholder {
+            background: #f0f4f8;
+            border-radius: 16px;
+            padding: 35px 20px;
+            text-align: center;
+            color: #666;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
     <header class="header-bg">
         <div class="school-badge-float">
-            <img src="images/logo.png" alt="长青青耘" />
+            <img src="images/logo.png" alt="长青青耘">
         </div>
         <h1>长青青耘社会实践支教团</h1>
         <p class="slogan">青春逐梦 · 为爱耕耘</p>
@@ -67,8 +79,8 @@
             <ul>
                 <li><a href="index.html">首页</a></li>
                 <li><a href="team.html">团队介绍</a></li>
-                <li><a href="location.html">支教地点</a></li>
-                <li><a href="activities.html" class="active">活动日记</a></li>
+                <li><a href="location.html" class="active">支教地点</a></li>
+                <li><a href="activities.html">活动日记</a></li>
                 <li><a href="members.html">成员风采</a></li>
                 <li><a href="contact.html">联系方式</a></li>
             </ul>
@@ -77,25 +89,52 @@
 
     <main>
         <section class="intro">
-            <h2>📖 支教日记</h2>
-            <p style="color:#888;font-size:16px;">记录在九龙学校的点点滴滴</p>
+            <h2>🏫 支教地点：隆回九龙学校</h2>
+            <p>我们实践活动开展的校园全貌与办学背景</p>
         </section>
-
-        <div class="diary-list">
-            <div class="diary-item">
-                <span class="date">2026-07-20</span>
-                <span class="title">DAY1：初遇九龙，满眼星光</span>
-                <div class="summary">今天是我们到达隆回县九龙学校的第一天。孩子们好奇的眼神和纯真的笑容，瞬间融化了我们一路的疲惫。破冰游戏上，大家玩得不亦乐乎。</div>
+        <div class="location-content">
+            <div class="location-card">
+                <h2>学校概况</h2>
+                <img src="images/school_main.jpg" alt="隆回九龙学校" class="school-img">
+                <p>
+                    <strong>隆回九龙学校</strong>坐落于湖南省邵阳市隆回县，是一所九年一贯制公办义务教育学校。
+                    2007年政府规划筹建，2011年正式办学，至今承载着县域内大量务工子女的求学梦想，
+                    有效缓解当地大班额、外来务工孩子入学难的民生问题。
+                </p>
+                <p>
+                    校园占地136.5亩，配套教学楼、科技楼、体艺馆、全塑胶标准运动场、多媒体计算机教室等完善现代化教学设施。
+                    目前开设101个教学班，在校学生6300余名，教职工270余人，办学规模位居县域前列，现任校长刘卫东。
+                </p>
             </div>
-            <div class="diary-item">
-                <span class="date">2026-07-19</span>
-                <span class="title">出发！奔赴湖南隆回</span>
-                <div class="summary">拖着行李箱，带着满满的教学物资，我们从北京出发。火车穿过平原和山川，心里充满了对支教生活的期待。九龙学校，我们来啦！</div>
-            </div>
-        </div>
 
-        <div class="update-tip">
-            💡 <strong>如何更新日记：</strong> 打开本文件（activities.html），找到上面 <code>&lt;div class="diary-list"&gt;</code> 区域，复制一份 <code>&lt;div class="diary-item"&gt;...&lt;/div&gt;</code> 粘贴到最前面，修改日期、标题和内容，保存并刷新网页即可。
+            <div class="location-card">
+                <h2>办学成果与特色</h2>
+                <ul>
+                    <li><strong>教学实力扎实</strong>：办学以来教学质量稳居全县前三，师生累计斩获省、市级学科、艺体竞赛奖项40余项，获评省级模范教工之家。</li>
+                    <li><strong>多元特色育人</strong>：2022年落地阅读培育专项计划，常态化开展书香课堂；同步打造艺体特色课程，获评全国足球特色学校、邵阳市“最美校园”。</li>
+                    <li><strong>暖心民生保障</strong>：2024年纳入隆回县义务教育营养改善计划，投入380万元专项食材配送项目，为全体学生提供安全、营养的校园餐食。</li>
+                </ul>
+                <img src="images/school_activity.jpg" alt="校园活动" class="school-img">
+            </div>
+
+            <div class="location-card">
+                <h2>支教意义</h2>
+                <div class="highlight-box">
+                    <p>
+                        <strong>校内多数学生为外出务工家庭子女，缺少课外拓展、素质教育资源。</strong>
+                        学校重视阅读、趣味科普、艺术体育类拓展课程，但专业课外师资缺口较大。
+                    </p>
+                    <p>
+                        长青青耘支教团在此开展趣味数学、美育、团体破冰等公益课堂，依托校园完善场地设施，
+                        为孩子们带来传统文化、绘画、团队游戏等特色课程，<strong>填补乡村孩子素质教育空白</strong>，
+                        陪伴乡村少年拓宽视野、丰富童年。
+                    </p>
+                </div>
+                <div class="map-placeholder">
+                    <p>📍 <strong>学校地址：</strong>湖南省邵阳市隆回县九龙学校</p>
+                    <p style="font-size:14px; color:#999;">（你可以把百度/高德地图截图放在这里，或嵌入地图iframe）</p>
+                </div>
+            </div>
         </div>
     </main>
 
