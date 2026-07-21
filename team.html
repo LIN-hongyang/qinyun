@@ -1,22 +1,77 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>长青青耘社会实践支教团</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队介绍 - 长青青耘</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .team-wrap {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 24px;
+        }
+        .team-block {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        .team-block h3 {
+            color: #02598a;
+            font-size: 26px;
+            margin-bottom: 16px;
+            border-left: 5px solid #00a0c4;
+            padding-left: 12px;
+        }
+        .team-block p {
+            color: #444;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+        .team-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 15px;
+        }
+        .team-tag {
+            padding: 6px 16px;
+            background: #e6f7ff;
+            border-radius: 30px;
+            color: #02598a;
+        }
+        /* 新增耘朵IP模块样式 */
+        .yunduo-box {
+            text-align: center;
+            margin: 40px auto;
+            max-width: 600px;
+        }
+        .yunduo-img {
+            width: 200px;
+            max-width: 70%;
+        }
+        .yunduo-text {
+            font-size: 18px;
+            color: #02598a;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
 <body>
     <header class="header-bg">
         <div class="school-badge-float">
-            <img src="images/logo.png" alt="长青青耘" />
+            <img src="images/logo.png" alt="长青青耘">
         </div>
         <h1>长青青耘社会实践支教团</h1>
-        <p class="slogan" id="typewriter">青春逐梦 · 为爱耕耘</p>
+        <p class="slogan">青春逐梦 · 为爱耕耘</p>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">首页</a></li>
-                <li><a href="team.html">团队介绍</a></li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="team.html" class="active">团队介绍</a></li>
                 <li><a href="location.html">支教地点</a></li>
                 <li><a href="activities.html">活动日记</a></li>
                 <li><a href="members.html">成员风采</a></li>
@@ -26,67 +81,57 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h2>长青青耘 · 为爱启航</h2>
-                <p>这个夏天，我们以爱为舟，奔赴湖南隆回</p>
-                <a href="team.html" class="btn-primary">了解我们</a>
-            </div>
-        </section>
-
         <section class="intro">
-            <h2>关于我们</h2>
-            <p>
-                “长青青耘”社会实践支教团隶属于北京科技大学，致力于在湖南省隆回县九龙学校开展支教活动。
-                我们用青春和热情点亮乡村孩子的梦想，用知识和陪伴助力他们成长。
-            </p>
-            <div class="features">
-                <div class="feature-item">
-                    <h3>📚 多元课程</h3>
-                    <p>涵盖语文、数学、英语、科学、艺术、体育等，全面发展。</p>
-                </div>
-                <div class="feature-item">
-                    <h3>❤️ 用心陪伴</h3>
-                    <p>注重素质教育与心理健康辅导，用爱浇灌每一颗心灵。</p>
-                </div>
-                <div class="feature-item">
-                    <h3>🌟 青春力量</h3>
-                    <p>团队成员来自不同专业，怀揣教育理想，充满活力与热情。</p>
-                </div>
-            </div>
+            <h2>我们的团队</h2>
+            <p>一群北科大青年归乡赴隆回，以青春之力浇灌乡土梦想</p>
         </section>
 
-        <section class="social-media-qr">
-            <h2>社交媒体账号</h2>
-            <div class="social-qr-list">
-                <div class="social-qr-item">
-                    <img src="images/wechat.jpg" alt="微信公众号" class="qr-img social-qr-img" />
-                    <div>微信公众号</div>
-                </div>
-                <div class="social-qr-item">
-                    <img src="images/xiaohongshu.jpg" alt="小红书" class="qr-img social-qr-img" />
-                    <div>小红书</div>
-                </div>
-                <div class="social-qr-item">
-                    <img src="images/kuaishou.jpg" alt="快手" class="qr-img social-qr-img" />
-                    <div>快手</div>
-                </div>
-                <div class="social-qr-item">
-                    <img src="images/douyin.jpg" alt="抖音" class="qr-img social-qr-img" />
-                    <div>抖音</div>
-                </div>
-                <div class="social-qr-item">
-                    <img src="images/weibo.jpg" alt="微博" class="qr-img social-qr-img" />
-                    <div>微博</div>
+        <!-- 新增耘朵IP形象区域 -->
+        <div class="yunduo-box">
+            <img src="images/yunduo.png" alt="耘朵 团队IP形象" class="yunduo-img">
+            <div class="yunduo-text">你好，我是耘朵，带你认识长青青耘支教小队✨</div>
+        </div>
+
+        <div class="team-wrap">
+            <div class="team-block">
+                <h3>队名释义：青与耘的初心</h3>
+                <p>“青”是长青总实践团传承下来的专属印记，每一支下乡支教分队都会带上这个字，代表我们是长青大家庭奔赴乡村的一份子，象征青年朝气、青山乡土，也代表生生不息的志愿接力。</p>
+                <p>“耘”取自耕耘，对应乡村支教的初心。土地需要农人耕耘，乡村孩童的成长也需要我们用心耕耘。我们奔赴乡间课堂，耐心陪伴孩子、传授知识，像播种人一般，在孩子们心底种下热爱、勇气与梦想的种子。</p>
+                <p>合在一起，长青青耘便是：<strong style="color:#02598a">以青春之力，耕耘乡间希望</strong></p>
+            </div>
+            <div class="team-block">
+                <h3>专属队徽内涵</h3>
+                <p>我们的队徽藏满隆回乡土温柔心意：虎形山山野与油菜花代表本地风土；中间讲台黑板是我们支教耕耘的专属阵地；花瑶挑花寄托传承非遗的心愿；两侧麦穗象征孩童汲取知识、向阳成长。</p>
+            </div>
+            <div class="team-block">
+                <h3>团队整体概况</h3>
+                <p>长青青耘社会实践支教团隶属于北京科技大学，是一支扎根湖南隆回、反哺家乡乡村教育的青年志愿队伍。2026年暑期，一批生长于邵阳隆回、遍布全校各专业的北科学子集结成团，奔赴隆回县九龙学校开展暑期公益支教实践。</p>
+                <p>小队由指导老师、带队学姐、统筹管理组、课程教学组、摄影宣传组、后勤保障组构成，覆盖文、理、工、艺多类专业，特长互补、分工清晰。全体队员怀揣纯粹公益初心，拒绝短期形式化支教，希望用大学所学拓宽乡村孩子眼界，缩短城乡教育差距。</p>
+                <div class="team-list">
+                    <span class="team-tag">指导引领层</span>
+                    <span class="team-tag">统筹管理组</span>
+                    <span class="team-tag">课程教学组</span>
+                    <span class="team-tag">摄影宣传组</span>
+                    <span class="team-tag">后勤保障组</span>
                 </div>
             </div>
-        </section>
+            <div class="team-block">
+                <h3>四大实践目标</h3>
+                <p>1. <strong>赋能乡村孩童</strong>：开设科普、美育、文体、心理疏导多元拓展课堂，填补乡村素质教育空白，陪伴留守儿童健康成长；</p>
+                <p>2. <strong>践行青年使命</strong>：响应大学生三下乡号召，走进基层乡村，在乡土实践中扛起青年责任，完成双向成长；</p>
+                <p>3. <strong>长效暖心帮扶</strong>：线下支教结束后搭建线上陪伴渠道，长期为孩子们提供学习支持与情绪陪伴；</p>
+                <p>4. <strong>传递公益力量</strong>：依托微信、小红书、抖音、快手、微博五大平台纪实支教故事，号召更多青年关注乡村教育。</p>
+            </div>
+            <div class="team-block">
+                <h3>即将启程：7月25日奔赴隆回九龙学校</h3>
+                <p>目前团队已完成全部备课、物资筹备、安全培训工作，将于2026年7月25日正式出发前往隆回九龙学校，开启为期十余天的暑期支教。</p>
+                <p>支教期间，每日纪实日记、课堂实拍、队员感悟将持续更新在活动日记页面与官方新媒体账号，记录盛夏里温暖的乡土相遇，敬请期待。</p>
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>© 2026 长青青耘社会实践支教团 ｜ 北京科技大学</p>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
