@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>活动日记 - 长青青耘</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .diary-list {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .diary-item {
+            background: white;
+            padding: 22px 28px;
+            margin-bottom: 20px;
+            border-radius: 18px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border-left: 6px solid #00a0c4;
+            transition: 0.3s;
+        }
+        .diary-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,100,155,0.08);
+        }
+        .diary-item .date {
+            color: #02598a;
+            font-weight: bold;
+            margin-right: 16px;
+            font-size: 16px;
+        }
+        .diary-item .title {
+            font-size: 19px;
+            font-weight: 600;
+        }
+        .diary-item .summary {
+            color: #555;
+            margin-top: 10px;
+            line-height: 1.7;
+        }
+        /* 空白等待提示样式 */
+        .empty-tip {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 60px 30px;
+            background: #ffffff;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+        }
+        .empty-tip h3 {
+            color: #02598a;
+            font-size: 24px;
+            margin-bottom: 14px;
+        }
+        .empty-tip p {
+            color: #666;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-bg">
+        <div class="school-badge-float">
+            <img src="images/logo.png" alt="长青青耘" />
+        </div>
+        <h1>长青青耘社会实践支教团</h1>
+        <p class="slogan">青春逐梦 · 为爱耕耘</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="team.html">团队介绍</a></li>
+                <li><a href="location.html">支教地点</a></li>
+                <li><a href="activities.html" class="active">活动日记</a></li>
+                <li><a href="members.html">成员风采</a></li>
+                <li><a href="contact.html">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>📖 支教日记</h2>
+            <p style="color:#888;font-size:16px;">记录在九龙学校的点点滴滴</p>
+        </section>
+
+        <div class="diary-list">
+            <!-- 空白等待提示，7.25支教启动后再新增日记 -->
+            <div class="empty-tip">
+                <h3>日记内容敬请期待✨</h3>
+                <p>我们将于7月25日正式抵达隆回九龙学校开启支教活动</p>
+                <p>支教期间会持续更新每日纪实日记，记录课堂、陪伴与温暖瞬间</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 长青青耘社会实践支教团 ｜ 北京科技大学</p>
+    </footer>
+</body>
+</html>
